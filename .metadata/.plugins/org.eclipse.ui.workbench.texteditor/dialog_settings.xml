@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="isRegEx"/>
+		<item value="" key="selection"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="true" key="wrap"/>
+		<item value="false" key="wholeword"/>
+		<list key="findhistory">
+			<item value="\\@"/>
+			<item value="login"/>
+			<item value="private"/>
+			<item value="checkdb()"/>
+			<item value=".equals("/>
+			<item value="depo"/>
+			<item value="arraylist"/>
+			<item value="timing"/>
+			<item value="20"/>
+			<item value="Mouse.setSpeed(2000)"/>
+			<item value="Mouse.setSpeed(500)"/>
+			<item value="10000000"/>
+			<item value="itempos"/>
+			<item value="amounttobuy"/>
+			<item value="false"/>
+		</list>
+		<list key="replacehistory">
+			<item value="public"/>
+			<item value=" == "/>
+			<item value=""/>
+			<item value="2000"/>
+			<item value="invitemcenter"/>
+			<item value="amountleft"/>
+			<item value="true"/>
+			<item value="buy"/>
+			<item value="Buy"/>
+		</list>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="284" key="DIALOG_WIDTH"/>
+		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
+		<item value="391" key="DIALOG_HEIGHT"/>
+		<item value="1120" key="DIALOG_X_ORIGIN"/>
+		<item value="97" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

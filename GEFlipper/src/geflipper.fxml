@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<fx:root maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="66.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="213.0" layoutY="6.0" text="Bot Heaven">
+               <font>
+                  <Font name="Tahoma Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label layoutX="203.0" layoutY="35.0" text="Grand Exchange Item Flipper">
+               <font>
+                  <Font name="Tahoma" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TabPane prefHeight="335.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab closable="false" text="Statistics">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="282.0" prefWidth="600.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="14.0" text="Current money:">
+                           <font>
+                              <Font name="Georgia" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="300.0" layoutY="14.0" text="Task item:">
+                           <font>
+                              <Font name="Georgia" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="201.0" text="Items bought:">
+                           <font>
+                              <Font name="Georgia" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="231.0" text="Items sold:">
+                           <font>
+                              <Font name="Georgia" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="300.0" layoutY="50.0" text="RSBuddy Average:">
+                           <font>
+                              <Font name="Georgia" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="300.0" layoutY="77.0" text="Last updated:">
+                           <font>
+                              <Font name="Georgia" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="14.0" layoutY="264.0" text="Estimated profit so far:">
+                           <font>
+                              <Font name="Georgia" size="17.0" />
+                           </font>
+                        </Label>
+                        <Button id="start_btn" layoutX="363.0" layoutY="191.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Start" />
+                        <Button id="pause_btn" layoutX="486.0" layoutY="191.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="100.0" text="Pause" />
+                        <Label id="curr_money" layoutX="138.0" layoutY="14.0" text="30000 gold">
+                           <font>
+                              <Font name="Georgia" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label id="curr_item" layoutX="382.0" layoutY="14.0" text="Current item">
+                           <font>
+                              <Font name="Georgia" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label id="rsaverage" layoutX="443.0" layoutY="50.0" text="100">
+                           <font>
+                              <Font name="Georgia" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label id="lastupdated" layoutX="404.0" layoutY="77.0" text="30 sec ago">
+                           <font>
+                              <Font name="Georgia" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label id="bought" layoutX="120.0" layoutY="201.0" text="0">
+                           <font>
+                              <Font name="Georgia" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label id="sold" layoutX="98.0" layoutY="231.0" text="0">
+                           <font>
+                              <Font name="Georgia" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label id="profit" layoutX="189.0" layoutY="264.0" text="0">
+                           <font>
+                              <Font name="Georgia" size="17.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="373.0" layoutY="153.0" text="Status:">
+                           <font>
+                              <Font name="Tahoma" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label id="status" layoutX="436.0" layoutY="153.0" text="Idle">
+                           <font>
+                              <Font name="Tahoma" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab closable="false" text="Settings">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField id="settings_itemname" layoutX="70.0" layoutY="70.0" prefHeight="25.0" prefWidth="180.0" promptText="Item name (Case sensitive)" />
+                        <TextField id="settings_firstpercent" layoutX="70.0" layoutY="141.0" prefHeight="25.0" prefWidth="180.0" promptText="First pass %" />
+                        <TextField id="settings_nextpercent" layoutX="70.0" layoutY="179.0" prefHeight="25.0" prefWidth="180.0" promptText="Every next pass %" />
+                        <TextField id="settings_itemname" layoutX="357.0" layoutY="96.0" prefHeight="25.0" prefWidth="180.0" promptText="1000" />
+                        <Slider id="settings_delayseconds" layoutX="20.0" layoutY="235.0" majorTickUnit="10.0" max="120.0" minorTickCount="5" prefHeight="38.0" prefWidth="280.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+                        <Label layoutX="101.0" layoutY="33.0" text="Item Settings">
+                           <font>
+                              <Font name="Tahoma" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="75.0" layoutY="107.0" text="Calculation Settings">
+                           <font>
+                              <Font name="Tahoma" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="55.0" layoutY="204.0" text="Delay Amount">
+                           <font>
+                              <Font name="Tahoma" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label id="settings_delaylabel" layoutX="180.0" layoutY="204.0" text="(seconds)">
+                           <font>
+                              <Font name="Tahoma" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="383.0" layoutY="33.0" text="Other Settings">
+                           <font>
+                              <Font name="Tahoma" size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="381.0" layoutY="69.0" prefHeight="30.0" prefWidth="132.0" text="Set the minimum gold the bot should work with" textOverrun="WORD_ELLIPSIS" wrapText="true">
+                           <font>
+                              <Font name="Tahoma" size="10.0" />
+                           </font>
+                        </Label>
+                        <Button id="settings_load" layoutX="350.0" layoutY="156.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="193.0" text="Load Settings" />
+                        <Button id="settings_save" layoutX="350.0" layoutY="227.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="193.0" text="Save Settings" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </TabPane>
+   </children>
+</fx:root>

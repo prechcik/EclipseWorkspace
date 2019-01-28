@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<fx:root type="javafx.scene.layout.VBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="54.0" prefWidth="602.0" text="Bot Heaven" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="37.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="600.0" text="Wilderness Nature Rune Picker" />
+      <TabPane id="panelsettings" prefHeight="338.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab id="stats" closable="false" text="Stats">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="315.0" prefWidth="600.0">
+                     <children>
+                        <Label layoutX="14.0" layoutY="48.0" text="Character Name:" />
+                        <Label layoutX="67.0" layoutY="70.0" text="Status:" />
+                        <Label layoutX="31.0" layoutY="93.0" text="Runes picked:" />
+                        <Label layoutX="53.0" layoutY="116.0" text="Time run:" />
+                        <Label id="charname" layoutX="114.0" layoutY="48.0" text="charname" />
+                        <Label id="status" layoutX="114.0" layoutY="70.0" text="status" />
+                        <Label id="runespicked" layoutX="114.0" layoutY="93.0" text="0" />
+                        <Label id="timerun" layoutX="114.0" layoutY="116.0" text="00:00:00" />
+                        <Button id="startbtn" layoutX="186.0" layoutY="196.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="96.0" text="Start">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                        <Button id="stopbtn" layoutX="299.0" layoutY="196.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="96.0" text="Stop">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab id="settings" closable="false" text="Settings">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Slider id="healat" blockIncrement="5.0" layoutX="147.0" layoutY="203.0" showTickLabels="true" showTickMarks="true" snapToTicks="true" />
+                        <TextField id="foodname" layoutX="142.0" layoutY="75.0" promptText="Food name" />
+                        <TextField id="minfood" layoutX="142.0" layoutY="108.0" promptText="Minimum food" />
+                        <TextField id="maxfood" layoutX="142.0" layoutY="140.0" promptText="Food to withdraw" />
+                        <Label layoutX="150.0" layoutY="176.0" text="Percent to heal at:" />
+                        <Label id="healat" layoutX="289.0" layoutY="127.0" />
+                        <Label id="healatlabel" layoutX="250.0" layoutY="176.0" text="0%" />
+                        <Label layoutX="194.0" layoutY="40.0" text="Food">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Button id="loadsettings" layoutX="312.0" layoutY="78.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="125.0" text="Load Settings" />
+                        <Button id="savesettings" layoutX="312.0" layoutY="155.0" mnemonicParsing="false" prefHeight="72.0" prefWidth="125.0" text="Save Settings" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</VBox>
