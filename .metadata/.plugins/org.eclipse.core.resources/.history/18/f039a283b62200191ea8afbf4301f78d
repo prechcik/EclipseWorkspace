@@ -1113,7 +1113,7 @@ public class buyer extends Script implements Arguments {
 				Mouse.click(730, 10, 0);
 				General.sleep(1000);
 			}
-		} 
+		}
 		
 		if (Login.getLoginState() != STATE.INGAME) {
 			online = 0;
