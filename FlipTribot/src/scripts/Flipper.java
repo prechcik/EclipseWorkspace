@@ -43,7 +43,7 @@ import scripts.mwindow;
 @ScriptManifest(authors = { "Prech" }, category = "Money Making", name = "GE Flipper")
 public class Flipper extends Script{
 	
-	private final String serverIP = "prech.info/botnetwork";
+	private final String serverIP = "localhost/botnetwork";
 	
 	private enum status { IDLE, OPENWINDOW, BUYING, COLLECTINGBUY, CANCELBUY, SELLING, COLLECTINGSELL, CANCELSELL, ANTIBAN, UPDATEPRICES, UPDATEMONEY };
 	
